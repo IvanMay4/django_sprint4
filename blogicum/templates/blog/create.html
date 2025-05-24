@@ -11,7 +11,7 @@
 {% endblock %}
 {% block content %}
   <div class="col d-flex justify-content-center">
-    <div class="card" style="width: 40rem;">
+    <div class="card text-bg-success" style="width: 40rem;">
       <div class="card-header">
         {% if '/edit/' in request.path %}
           Редактирование публикации
@@ -38,7 +38,7 @@
               <p>{{ form.instance.text|linebreaksbr }}</p>
             </article>
           {% endif %}
-          {% bootstrap_button button_type="submit" content="Отправить" %}
+          <button type="submit" class="btn btn-outline-dark">Отправить</button>
         </form>
       </div>
     </div>
